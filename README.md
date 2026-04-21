@@ -1,4 +1,3 @@
-cat > README.md << 'EOF'
 # Face Recognition
 
 A face recognition system built for Pattern Recognition (CA2), implementing classical and deep learning methods on the CMU PIE dataset.
@@ -12,10 +11,11 @@ This project explores face recognition through two parts:
 ## Dataset
 
 This project uses the CMU PIE dataset. You may also use any other face dataset, but images must be organized as follows:
-PIE/
-├── 1/   (images of subject 1)
-├── 2/   (images of subject 2)
-└── ...  (up to 68 subjects)
+
+    PIE/
+    ├── 1/   (images of subject 1)
+    ├── 2/   (images of subject 2)
+    └── ...  (up to 68 subjects)
 
 Additionally, 10 personal selfies are required under `SELFIES/` as an extra class. These are not included in this repository for privacy reasons.
 
@@ -31,20 +31,23 @@ Additionally, 10 personal selfies are required under `SELFIES/` as an extra clas
 | 2 | CNN | End-to-end training on raw 32x32 grayscale images |
 
 ## Project Structure
-Face_Reco/
-├── Face_Reco.ipynb    # Main notebook
-├── requirements.txt   # Dependencies
-├── README.md
-├── PIE/               # Dataset (not included)
-└── SELFIES/           # Personal photos (not included)
+
+    Face_Reco/
+    ├── Face_Reco.ipynb    # Main notebook
+    ├── requirements.txt   # Dependencies
+    ├── README.md
+    ├── PIE/               # Dataset (not included)
+    └── SELFIES/           # Personal photos (not included)
 
 ## Requirements
 
 Python 3.12
-pip install -r requirements.txt
+
+    pip install -r requirements.txt
 
 ## Usage
 
 1. Prepare dataset under `PIE/` and selfies under `SELFIES/`
 2. Run all cells in order in `Face_Reco.ipynb`
+
 
